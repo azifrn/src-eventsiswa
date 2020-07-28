@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Advertise Event</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        form{
+            text-align: center;
+            font-family: "Roboto", sans-serif;
+            color: white;
+            font-size: 1.3em;
+        }
+        input,select{
+            padding: 10px;
+            font-size: 1.1em;
+            border-radius: 15px;
+            outline: none;
+        }
+        body{
+            background-color: rgba(107, 33, 50, 1);
+        }
+
+        #explain{
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+<form action="submitdetails.php" method="post">
+    <p>
+        <label for="ev_title">Event Title</label><br>
+        <input type="text" name="ev_title" id="ev_title">
+    </p>
+    <p>
+        <label for="ev_desc">Event Description</label><br>
+        <textarea name="ev_desc" id="ev_desc" rows="10" cols="30"></textarea>
+    </p>
+    <p>
+        <label for="level_id">MyCAT level</label><br>
+          <select id="level_id" name="level_id">
+            <option value="Student Committee (6 pts)" selected>Student Committee (6 pts)</option>
+            <option value="College/Faculty (8 pts)">College/Faculty (8 pts)</option>
+            <option value="University (10 pts)">University (10 pts)</option>
+            <option value="State (12 pts)">State (12 pts)</option>
+            <option value="National (14 pts)">National (14 pts)</option>
+            <option value="International (16)">International (16 pts)</option>
+          </select>
+    </p>
+    <p>
+        <label for="ev_date">Event Date</label><br>
+        <input type="date" name="ev_date" id="ev_date">
+    </p>
+    <p>
+        <label for="ev_venue">Event Venue</label><br>
+        <input type="text" name="ev_venue" id="ev_venue">
+    </p>
+    <p>
+        <label for="ev_contact">Organizer Contact</label><br>
+        <input type="text" name="ev_contact" id="ev_contact">
+    </p>
+    <p>
+        <label for="ev_imgpath">Banner URL</label><br>
+        <a id="explain">Host the image somewhere and use the <b>direct link.</b> (IMPORTANT)</a><br>
+        <input type="text" name="ev_imgpath" id="ev_imgpath">
+    </p>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
