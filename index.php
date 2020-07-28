@@ -103,7 +103,7 @@
 </head>
 <body>
 
-    <div id="topbar"><button id="addnew">Advertise Event</button></div>
+    <div id="topbar"><button onclick="document.location='advertiseform.html'" id="addnew">Advertise Event</button></div>
 
     <?php
     $servername = "sql12.freemysqlhosting.net";
