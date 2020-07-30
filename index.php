@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 
 <html lang="en">
-<head>
-    <meta charset="utf-8">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    
     <title>Eventsiswa v1</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
     <style>
@@ -106,10 +106,10 @@
     <div id="topbar"><button onclick="document.location='advertiseform.html'" id="addnew">Advertise Event</button></div>
 
     <?php
-    $servername = "sql12.freemysqlhosting.net";
-    $username = "sql12356547";
-    $password = "CwhffUGHQ7";
-    $dbname = "sql12356547";
+    $servername = "johnny.heliohost.org";
+    $username = "evsiswa_admin";
+    $password = "dcba1235";
+    $dbname = "evsiswa_maindb";
     $conn = new mysqli($servername, $username, $password, $dbname);
     $sql = "SELECT * FROM entry";
     $query = $conn->query($sql);
