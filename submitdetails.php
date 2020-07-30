@@ -1,5 +1,5 @@
 <?php
-$link = mysqli_connect("sql12.freemysqlhosting.net", "sql12356547", "CwhffUGHQ7", "sql12356547");
+$link = mysqli_connect("johnny.heliohost.org", "evsiswa_admin", "dcba1235", "evsiswa_maindb");
 
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
